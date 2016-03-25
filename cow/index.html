@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>逗牛</title>
+	<script type="text/javascript">
+        if (/Android (\d+\.\d+)/.test(navigator.userAgent)) {
+            var version = parseFloat(RegExp.$1);
+            if (version > 2.3) {
+                var phoneScale = parseInt(window.screen.width) / 640;
+                document.write('<meta name="viewport" content="width=640, minimum-scale = ' + phoneScale + ', maximum-scale = ' + phoneScale + ', target-densitydpi=device-dpi">');
+            } else {
+                document.write('<meta name="viewport" content="width=640, target-densitydpi=device-dpi">');
+            }
+        } else {
+            document.write('<meta name="viewport" content="width=640, user-scalable=no, target-densitydpi=device-dpi">');
+        }
+    </script>
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+</head>
+<body>
+	<div class="wrap">
+		<div class="houseBox">
+			<img src="images/house.png" alt="" id="house">
+			<img src="images/smoke.png" alt="" id="smoke">
+			<img src="images/brand.png" alt="" id="brand" class="animated infinite swing">
+		</div>
+		<img src="images/logo.png" alt="" id="logo">
+		<img src="images/cow1.png" alt="" id="cow1" class="cow">
+		<img src="images/cow2.png" alt="" id="cow2" class="cow">
+		<img src="images/cow3.png" alt="" id="cow3" class="cow">
+		<img src="images/cow4.png" alt="" id="cow4" class="cow">
+		<a href="javascript:void(0);" id="beginBtn">
+			<img src="images/begin.png">
+		</a>
+	</div>
+</body>
+</html>

@@ -1,0 +1,95 @@
+* {
+  margin: 0 auto;
+  padding: 0 auto;
+}
+html,
+body {
+  height: 1041px;
+  width: 640px;
+  margin: 0 auto;
+}
+.wrap {
+  background: url("../images/bg2.jpg") no-repeat;
+  background-size: 100%;
+  height: 100%;
+  position: relative;
+}
+#house {
+  position: absolute;
+  right: 0;
+  top: 50px;
+}
+#smoke {
+  position: absolute;
+  top: 25px;
+  right: 105px;
+  animation-name: smoke;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+@keyframes smoke {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+}
+#brand {
+  position: absolute;
+  top: 98px;
+  right: 108px;
+}
+#logo {
+  position: absolute;
+  top: 400px;
+  left: 64px;
+}
+#cow1 {
+  position: absolute;
+  top: 290px;
+  left: 100px;
+}
+#cow2 {
+  position: absolute;
+  top: 270px;
+  right: 100px;
+  animation-delay: 0.5s;
+}
+#cow3 {
+  position: absolute;
+  left: 25px;
+  bottom: 270px;
+  animation-delay: 1.5s;
+}
+#cow4 {
+  position: absolute;
+  right: 25px;
+  bottom: 270px;
+  animation-delay: 1s;
+}
+.cow {
+  transform: scale(0.8);
+  animation-name: cow;
+  animation-duration: 2s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+@keyframes cow {
+  0% {
+    transform: scale(0.8);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+#beginBtn {
+  position: absolute;
+  bottom: 75px;
+  left: 150px;
+}
